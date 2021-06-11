@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bls-go/bls"
+	"github.com/GwkangZzz/bls-go/bls"
 	"testing"
 )
 
