@@ -10,8 +10,8 @@ package bls
  ********************************************************/
 
 /*
-#cgo CFLAGS: -I./relic/include -std=c11
-#cgo CXXFLAGS: -I./relic/include -std=c++17
+#cgo CFLAGS: -I./relic/include
+#cgo CXXFLAGS: -I./relic/include -std=c++14
 #cgo LDFLAGS: -L${SRCDIR}/relic/lib -lrelic_s -lstdc++
 //#cgo windows LDFLAGS: -l${SRCDIR}/relic/lib/relic_s -lstdc++
 #include <stdlib.h>
