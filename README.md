@@ -7,15 +7,11 @@ mkdir build && cd build
 - windows build
 ```
 cmake -G "MinGW Makefiles" ..
-cmake --build . -- -j8
-cd ..
-go build .
+cmake --build . --target bls-go
 ```
 
 - linux/mac build
 ```
 cmake ..
-cmake --build . -- -j8
-cd ..
-go build .
+cmake --build . --target bls-go
 ```
