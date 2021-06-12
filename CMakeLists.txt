@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
 project(bls-go)
 
-# C/C++ÏîÄ¿
+# C/C++é¡¹ç›®
 add_subdirectory(./bls bls)
 
 add_custom_target(${PROJECT_NAME}
-# ±àÒëC/C++
+# ç¼–è¯‘C/C++
 COMMAND cmake --build . -- -j8
-# ±àÒëgo
+# ç¼–è¯‘go
 COMMAND go build ${CMAKE_CURRENT_SOURCE_DIR}
 )
