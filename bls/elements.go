@@ -94,6 +94,9 @@ func (g1 *G1Element) Serialize() (data []byte) {
 	sp.Data = uintptr(unsafe.Pointer(d))
 	sp.Len = int(size)
 	sp.Cap = sp.Len
+
+	data = make([]byte, len(sl))
+
 	copy(data, sl)
 	C.free(unsafe.Pointer(d))
 	return
@@ -182,6 +185,8 @@ func (g2 *G2Element) Serialize() (data []byte) {
 	sp.Data = uintptr(unsafe.Pointer(d))
 	sp.Len = int(size)
 	sp.Cap = sp.Len
+
+	data = make([]byte, len(sl))
 	copy(data, sl)
 	C.free(unsafe.Pointer(d))
 	return

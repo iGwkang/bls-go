@@ -62,12 +62,12 @@ func (pk *PrivateKey) Copy() *PrivateKey {
 	return newPk
 }
 
-func (pk *PrivateKey) GetG1() *G1Element {
+func (pk *PrivateKey) GetG1Element() *G1Element {
 	g1 := &G1Element{ptr: C.PrivateKeyGetG1(pk.ptr)}
 	return g1
 }
 
-func (pk *PrivateKey) GetG2() *G2Element {
+func (pk *PrivateKey) GetG2Element() *G2Element {
 	g2 := &G2Element{ptr: C.PrivateKeyGetG2(pk.ptr)}
 	return g2
 }
