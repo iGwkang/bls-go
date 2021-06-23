@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/GwkangZzz/bls-go/bls"
+	"github.com/iGwkang/bls-go/bls"
 )
 
 func main() {
